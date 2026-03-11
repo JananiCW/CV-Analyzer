@@ -58,7 +58,7 @@ User uploads CV → React frontend → Go backend → PDF text extraction → Ge
 
 ##Screenshots
 
-<img width="1455" height="812" alt="image" src="https://github.com/user-attachments/assets/97ba52f6-6380-42a0-8c84-a13a8c3a4eea" />
+<img width="1116" height="868" alt="image" src="https://github.com/user-attachments/assets/e047d9a5-2f61-4846-a6a6-a05d6a6d203f" />
 <br/>
 <img width="1441" height="872" alt="image" src="https://github.com/user-attachments/assets/df6cd06c-5ac2-4fb5-886f-fe7f7b5c901c" />
 <br/>
