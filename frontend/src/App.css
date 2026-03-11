@@ -1,0 +1,251 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.app {
+  width: 100%;
+  max-width: 750px;
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 24px;
+  padding: 40px;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.4);
+}
+
+/* ── Header ── */
+.header {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.header h1 {
+  font-size: 36px;
+  color: white;
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 14px;
+}
+
+/* ── Upload Section ── */
+.upload-section {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.upload-box {
+  background: rgba(255, 255, 255, 0.05);
+  border: 2px dashed rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  padding: 32px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.7);
+  transition: border 0.2s;
+}
+
+.upload-box:hover {
+  border-color: #a78bfa;
+}
+
+.upload-box p {
+  margin-bottom: 16px;
+  font-size: 16px;
+}
+
+.file-input {
+  color: white;
+  font-size: 14px;
+}
+
+.file-name {
+  margin-top: 12px !important;
+  color: #a78bfa !important;
+  font-size: 14px !important;
+}
+
+.analyze-btn {
+  padding: 16px;
+  background: linear-gradient(135deg, #7c3aed, #a78bfa);
+  color: white;
+  border: none;
+  border-radius: 14px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: opacity 0.2s, transform 0.1s;
+  letter-spacing: 0.5px;
+}
+
+.analyze-btn:hover {
+  opacity: 0.9;
+}
+
+.analyze-btn:active {
+  transform: scale(0.98);
+}
+
+.analyze-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* ── Result Section ── */
+.result-section {
+  margin-bottom: 32px;
+}
+
+.result-section h2 {
+  color: white;
+  font-size: 18px;
+  margin-bottom: 16px;
+}
+
+.analysis-box {
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 16px;
+  padding: 24px;
+  max-height: 400px;
+  overflow-y: auto;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.section-title {
+  color: #a78bfa;
+  font-weight: 700;
+  font-size: 16px;
+  margin: 12px 0 4px 0;
+}
+
+.section-text {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 2px 0;
+}
+
+/* ── History Section ── */
+.history-section {
+  margin-bottom: 32px;
+}
+
+.history-section h2 {
+  color: white;
+  font-size: 18px;
+  margin-bottom: 16px;
+}
+
+.history-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.history-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  padding: 14px 16px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: background 0.2s;
+}
+
+.history-item:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.history-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.history-filename {
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.history-date {
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 12px;
+}
+
+.history-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.view-btn {
+  padding: 8px 14px;
+  background: rgba(167, 139, 250, 0.2);
+  color: #a78bfa;
+  border: 1px solid #a78bfa;
+  border-radius: 8px;
+  font-size: 13px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.view-btn:hover {
+  background: rgba(167, 139, 250, 0.3);
+}
+
+.del-btn {
+  padding: 8px 12px;
+  background: rgba(239, 68, 68, 0.2);
+  color: #ef4444;
+  border: 1px solid #ef4444;
+  border-radius: 8px;
+  font-size: 13px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.del-btn:hover {
+  background: rgba(239, 68, 68, 0.3);
+}
+
+/* ── Footer ── */
+.footer {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.2);
+  font-size: 12px;
+}
+
+/* Scrollbar */
+.analysis-box::-webkit-scrollbar {
+  width: 6px;
+}
+
+.analysis-box::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 3px;
+}
+
+.analysis-box::-webkit-scrollbar-thumb {
+  background: #7c3aed;
+  border-radius: 3px;
+}
